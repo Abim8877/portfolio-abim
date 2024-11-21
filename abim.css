@@ -19,6 +19,9 @@ header{
     list-style: none;
 }
 @media (max-width:1350px) {
+
+    /* FOR THE HEADER */
+
     header{
         display: flex;
         justify-content: space-around;
@@ -35,7 +38,30 @@ header{
         align-items: center;
         list-style: none;
     }
+
+    /* FOR THE MAIN FIRST */
+
+   .main-first{
+        display: flex;
+        flex-flow: column;
+        margin-left: 3rem;
+   }
+   .main-pic{
+    height: 650px;
+    max-width: 500px;
+    border-radius: 13%;
+    margin-left: 12rem;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
 }
+}
+
+
+
+
+
+
 .main-first{
     display: flex;
     justify-content: space-around;
