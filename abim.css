@@ -13,23 +13,78 @@ header{
 .header{
     display: flex;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 2rem;
     font-size: 1.5rem;
     align-items: center;
     list-style: none;
 }
+@media (max-width:1350px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo{
+        font-size: 2rem;
+        list-style: none;
+    }
+    .header{
+        display: none;
+        justify-content: space-around;
+        gap: 2rem;
+        font-size: 1.5rem;
+        align-items: center;
+        list-style: none;
+    }
+}
 .main-first{
     display: flex;
     justify-content: space-around;
-    margin-right: 170px;
+    margin-top: 10rem;
 }
-.picture > .main-pic{
-    height: 160px;
-    width: 10rem;
+.main-name{
+    margin-left: 12rem;
+    animation-name: test;
+    animation-duration: 3s;
+    margin-top: 5rem;
+}
+.main-pic{
+    height: 30rem;
+    width: 25rem;
+    border-radius: 3rem;
+    margin-right: 20rem;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    0% {right: -100%; rotate: 180deg;}
+    50% { right: 0px;}
+}
+
+@keyframes test {
+    0% {left: -100%;}
+    50% { left: 0px;}
+    100% {left: 0px;}
 }
 .name1{
+    font-size: 4rem;
+}
+.name2{
+    font-size: 1.8rem;
+    margin-top: -1rem;
+}
+.name3{
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.name4{
     font-size: 2rem;
 }
+
 /* .main-first{
     display: flex;
     justify-content: space-between;
@@ -85,13 +140,6 @@ header{
     position: absolute;
     width: 200vh;
     top: 1000px;
-}
-@media only screen and(min-width:1900px) {
-    .main-first{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 150px;
-    }
 }
 .main-skill{
     display: flex;
@@ -354,17 +402,6 @@ header{
 }
 .ic{
     color: #7190f0;
-}
-.fa-facebook-f, .fa-x-twitter, .fa-instagram{
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    border-radius: 50%;
-    padding: 10px 5px 0px 5px;
-    background-color: #7190f0;
-    color: white;
-    font-size: 25px;
-    margin-top: 60px;
 }
 .fa-figma, .fa-wordpress-simple, .fa-react, .fa-html5{
     width: 35px;
